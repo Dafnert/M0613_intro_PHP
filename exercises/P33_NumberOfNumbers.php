@@ -20,5 +20,3 @@ class P33_NumberOfNumbers
         echo "Number of numbers: " . $attempts;
     }
 }
-$ex = new P33_NumberOfNumbers();
-$ex->main();

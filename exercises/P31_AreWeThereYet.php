@@ -13,5 +13,3 @@ class P31_AreWeThereYet
         }
     }
 }
-$ex = new P31_AreWeThereYet();
-$ex->main();

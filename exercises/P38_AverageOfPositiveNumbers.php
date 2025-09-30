@@ -9,19 +9,20 @@ class P38_AverageOfPositiveNumbers
         $count = 0;
         do {
             $num = trim(string: fgets($GLOBALS['STDIN'] ?? STDIN));
-            if ($num != 0) {
+            if ($num > 0) {
                 $sum += $num;
                 $count++;
             }
             if($num == 0){
-            echo "Cannot calculate teh average";
             break;
             }
             
         } while (true);
-        $avg = $sum / $count;
-        echo "Average " . $avg;
+        if ($count == 0) {
+            echo "Cannot calculate the average";
+        } else {
+            $avg = $sum / $count;
+            echo "Average " . $avg;
+        }
     }
 }
-$ex = new P38_AverageOfPositiveNumbers();
-$ex->main();

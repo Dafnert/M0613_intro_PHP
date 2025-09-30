@@ -8,12 +8,10 @@ class P25_Password
        echo "Password?\n";
         
         $pass = trim(string: fgets($GLOBALS['STDIN'] ?? STDIN));
-        if ($pass == "Caput Draconis") {
+        if ($pass === "Caput Draconis") {
             echo "Welcome!";
         }else{
           echo "Off with you!";
         }
     }
 }
-$ex = new P25_Password();
-$ex->main();

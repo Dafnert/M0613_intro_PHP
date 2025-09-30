@@ -15,8 +15,6 @@ class P35_SumOfNumbers
             $sum += $num;
         } while (true);
 
-        echo "Number of numbers: " . $sum;
+        echo "Sum of the numbers: " . $sum;
     }
 }
-$ex = new P35_SumOfNumbers();
-$ex->main();

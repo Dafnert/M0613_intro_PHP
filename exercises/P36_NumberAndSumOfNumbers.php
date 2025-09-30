@@ -19,8 +19,6 @@ class P36_NumberAndSumOfNumbers
             $sum += $num;
         } while (true);
         echo "Number of numbers: " . $attempts . "\n";
-        echo "Sum of the number:" . $sum;
+        echo "Sum of the numbers: " . $sum;
     }
 }
-$ex = new P36_NumberAndSumOfNumbers();
-$ex->main();

@@ -15,7 +15,4 @@ class P26_Same
           echo "Different";
         }
     }
-    //for ($x = 0; $x <= 10; $x++) {
 }
-$ex = new P26_Same();
-$ex->main();

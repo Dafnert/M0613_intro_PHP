@@ -9,7 +9,7 @@ class P21_LargerThanOrEqualTo
         echo "Give the first number:\n";
 
         // Get input from the user
-        $numA = (int) trim(string: fgets($GLOBALS['STDIN'] ?? STDIN));
+        $numA = (int)trim(string: fgets($GLOBALS['STDIN'] ?? STDIN));
 
         // Prompt the user for input
         echo "Give the second number:\n";
@@ -19,11 +19,11 @@ class P21_LargerThanOrEqualTo
 
         // Check year value
         if ($numA < $numB) {
-            echo "Greater number is:".$numA;
+            echo "Greater number is: ".$numB."\n";
         } else if ($numA > $numB) {
-            echo "Greater number is:".$numB;
+            echo "Greater number is: ".$numA."\n";
         } else {
-            echo "The numbers are equal!";
+            echo "The numbers are equal!\n";
         }
     }
 }
