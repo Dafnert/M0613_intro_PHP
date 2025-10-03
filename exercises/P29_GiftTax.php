@@ -5,7 +5,8 @@ class P29_GiftTax
     public function main(): void
     {
         echo "Value of the gift?\n";
-        $value = intval(trim(fgets(STDIN)));
+        $stdin = $GLOBALS['STDIN'] ?? STDIN;
+        $value = trim(fgets($stdin));
 
         if ($value < 5000) {
             echo "No tax!\n";
